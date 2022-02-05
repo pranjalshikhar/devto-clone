@@ -15,9 +15,10 @@ const Navigation = (props) => {
   return (
     <header className="header">
       <div className="headerContainer">
-        <div className="headerContainer__hamburgerMenu" onClick={() => props.openMenu()}>
-            <GiHamburgerMenu size="2.5rem" />
-        </div>
+        <div
+          className="headerContainer__hamburgerMenu"
+          onClick={() => props.openMenu()}
+        ></div>
         <a href="https://dev.to" className="headerContainer__logo">
           <FaDev size="3.125rem" />
         </a>
@@ -50,8 +51,8 @@ const Navigation = (props) => {
         <ul>
           <li onClick={toggle}>
             <a href="/profile">
-              <div className="u-name">PRANJAL</div>
-              <small className="u-name-id">@pranjal</small>
+              <div className="u-name">CodeBucks</div>
+              <small className="u-name-id">@codebucks</small>
             </a>
           </li>
 
