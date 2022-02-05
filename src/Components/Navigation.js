@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaDev } from "react-icons/fa";
-import { BiMessageRoundedCheck } from "react-icons/bi";
-import { RiNotificationLine } from "react-icons/ri";
+import { RiMessage3Fill } from "react-icons/ri";
+import { MdNotificationsActive } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navigation = (props) => {
   const [showMenu, setshowMenu] = useState(false);
@@ -34,10 +35,10 @@ const Navigation = (props) => {
             <FiSearch />
           </i>
           <i>
-            <BiMessageRoundedCheck />
+            <RiMessage3Fill />
           </i>
           <i>
-            <RiNotificationLine />
+            <MdNotificationsActive />
           </i>
 
           <span onClick={toggle}>
