@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaDev } from "react-icons/fa";
-import { BiMessageRoundedCheck } from "react-icons/bi";
-import { RiNotificationLine } from "react-icons/ri";
+import { RiMessage3Fill } from "react-icons/ri";
+import { MdNotificationsActive } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navigation = (props) => {
   const [showMenu, setshowMenu] = useState(false);
@@ -17,6 +18,7 @@ const Navigation = (props) => {
         <div
           className="headerContainer__hamburgerMenu"
           onClick={() => props.openMenu()}>
+              <GiHamburgerMenu size="2.5rem" />
         </div>
         <a href="https://dev.to" className="headerContainer__logo">
           <FaDev size="3.125rem" />
@@ -34,10 +36,10 @@ const Navigation = (props) => {
             <FiSearch />
           </i>
           <i>
-            <BiMessageRoundedCheck />
+            <RiMessage3Fill />
           </i>
           <i>
-            <RiNotificationLine />
+            <MdNotificationsActive />
           </i>
 
           <span onClick={toggle}>
